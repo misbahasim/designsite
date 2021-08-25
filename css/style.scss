@@ -143,7 +143,7 @@ header{
         left: 0;
         height: 11rem;
         width: 100%;
-        background: url('img/wave.png');
+        background: url('../img/wave.png');
         background-size: 100rem 11rem;
         background-repeat: repeat-x;
         animation: waves 10s linear infinite;
@@ -156,14 +156,7 @@ header{
         animation-duration: 4s;
         opacity: .5;
     }
-    @keyframes waves {
-        0%{
-            background-position-x: 0;
-        }
-        100%{
-            background-position-x: 100rem;
-        }
-    }
+  
     .fa-cog{
         position: absolute;
         font-size: 30rem;
@@ -182,6 +175,14 @@ header{
         100%{
             transform: rotate(360deg);
         }
+    }
+}
+@keyframes waves {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100rem;
     }
 }
 .about{

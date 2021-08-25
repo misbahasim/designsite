@@ -185,7 +185,7 @@ header .fa-bars {
   left: 0;
   height: 11rem;
   width: 100%;
-  background: url("img/wave.png");
+  background: url("../img/wave.png");
   background-size: 100rem 11rem;
   background-repeat: repeat-x;
   -webkit-animation: waves 10s linear infinite;
@@ -201,24 +201,6 @@ header .fa-bars {
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   opacity: .5;
-}
-
-@-webkit-keyframes waves {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 100rem;
-  }
-}
-
-@keyframes waves {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 100rem;
-  }
 }
 
 .home .fa-cog {
@@ -252,6 +234,24 @@ header .fa-bars {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes waves {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100rem;
+  }
+}
+
+@keyframes waves {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100rem;
   }
 }
 
