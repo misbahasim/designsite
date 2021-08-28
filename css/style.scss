@@ -502,84 +502,103 @@ footer{
     html{
         font-size: 50%;
     }
-    header .fa-bars{
-        display: block;
+    header{
+        .fa-bars{
+            display: block;
+        }
+        .navbar{
+            position: fixed;
+            top: -120%; left: 0;
+            height: auto;
+            width: 100%;
+            background-color: #FFF;
+            z-index: 1000;
+            border-top: .1rem solid rgba(0,0,0,.3);
+            ul{
+                height: 100%;
+                width: 100%;
+                flex-flow: column;
+                li{
+                    margin: 1rem 0;
+                    a{
+                        color: #444;
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+        .fa-times{
+            transform: rotate(180deg);
+            transform: skew(180deg);
+        }
+        .nav-toggle{
+            top: 5.8rem;
+        }
     }
-    header .navbar{
-        position: fixed;
-        top: -120%; left: 0;
-        height: auto;
-        width: 100%;
-        background-color: #FFF;
-        z-index: 1000;
-        border-top: .1rem solid rgba(0,0,0,.3);
+
+    .home {
+        .banner{
+            font-size: 4rem;
+        }
+        .slogan{
+            font-size: 1.7rem;
+        }
     }
-    header .navbar ul{
-        height: 100%;
-        width: 100%;
-        flex-flow: column;
+    .about{
+        .row{
+            flex-flow: column-reverse;
+            padding: 0 2rem;
+            .image{
+                img{
+                    width: 100vw;
+                }
+            }
+        }
     }
-    header .navbar ul li{
-        margin: 1rem 0;
+    .service{
+        .row{
+            flex-flow: column-reverse;
+            &:nth-child(even){
+                flex-flow: column;
+            }
+            .image{
+                img{
+                    width: 100vw;
+                }
+            }
+            .content{
+                padding: 0;
+            }
+        }
     }
-    header .navbar ul li a{
-        color: #444;
-        font-size: 2.4rem;
-    }
-    header .fa-times{
-        transform: rotate(180deg);
-        transform: skew(180deg);
-    }
-    header .nav-toggle{
-        top: 5.8rem;
-    }
-    .home .banner{
-        font-size: 4rem;
-    }
-    .home .slogan{
-        font-size: 1.7rem;
-    }
-    .about .row{
-        flex-flow: column-reverse;
-        padding: 0 2rem;
-    }
-    .about .row .image img{
-        width: 100vw;
-    }
-    .service .row{
-        flex-flow: column-reverse;
-    }
-    .service .row:nth-child(even){
-        flex-flow: column;
-    }
-    .service .row .image img{
-        width: 100vw;
-    }
-    .service .row .content{
-        padding: 0;
-    }
-    .contact .row{
-        flex-flow: column;
-    }
-    .contact .row .image img{
-        width: 100%;
-    }
-    .contact .row .form-container{
-        width: 100%;
-        padding: 0 1.5rem;
+    .contact {
+        .row{
+            flex-flow: column;
+            .image{
+                img{
+                    width: 100%;
+                }
+            }
+            .form-container{
+                width: 100%;
+                padding: 0 1.5rem;
+            }
+        }
     }
 
     .faq{
         padding: 0;
-    }
-    .faq .row{
-        padding: 0 1rem;
-        flex-flow: column;
-    }
-    .faq .row .image img{
-        width: 100vw;
-    }
-    .faq .row .accordion-container{
-        width: 100%;
+        .row{
+            padding: 0 1rem;
+            flex-flow: column;
+            .image{
+                img{
+                    width: 100vw;
+                }
+            }
+            .accordion-container{
+                width: 100%;
+            }
+        }
     }
 }
